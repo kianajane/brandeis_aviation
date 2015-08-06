@@ -1,0 +1,19 @@
+#header {
+	position:fixed;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: #333;
+	text-align: left justify;
+	padding-left: 20px;
+	z-index:9;
+	color: #f2f2f2;
+	padding: 20px 0 0 0;
+	top: 0px;
+}
+
+.section{
+	text-align: left justify;
+	padding-top: 50px;
+	padding-left: 20px;
+}
