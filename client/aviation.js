@@ -1,24 +1,12 @@
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
   
   Template.home.rendered = function() {
     $('#fullpage').fullpage({
       verticalCentered: false,
-      scrollOverflow: false
-    });
+      autoScrolling: false,
+			anchors: ['home', 'about', 'team', 'gallery', 'sponsors'],
+			sectionsColor: ['#E62B2B', '#E8BF19', '#169340', '#005CB8', '#2EB8E6'],
+			scrollBar: true
+		});
   }
-  
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
 }
